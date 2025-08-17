@@ -38,7 +38,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 --- Chroot and basic configuration ---
 
-arch-chroot /mnt
+arch-chroot /mnt << "EOF"
 
 echo "$HOSTNAME" > /etc/hostname
 
